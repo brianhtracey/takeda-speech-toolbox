@@ -1,0 +1,134 @@
+﻿Variable name,Voice aspect captured,Meaning
+mnpitch_ac,pitch / pitch variabilty, pitch stats across utterance
+sdpitch_ac,pitch / pitch variabilty,""""
+pitchjmp_ac,pitch / pitch variabilty,""""
+pitchjmp90ptile_ac,pitch / pitch variabilty,""""
+semitone_med,pitch / pitch variabilty,""""
+semitone_iqr,pitch / pitch variabilty,""""
+semitone_range,pitch / pitch variabilty,""""
+semitoneSD,pitch / pitch variabilty,""""
+PPE,pitch / pitch variabilty,pitch period entropy
+num_voice_breaks,pitch / pitch variabilty,"big jumps in pitch. Sometimes due to algorithm errors, so less trustworthy"
+jit_local,pitch / pitch variabilty,short-time scale timing variabilty - multiple flavors of jitter
+jit_localabs,pitch / pitch variabilty,""""
+jit_rap,pitch / pitch variabilty,""""
+jit_ppq5,pitch / pitch variabilty,""""
+jit_ddp,pitch / pitch variabilty,""""
+sh_local,amplitude variability,short-time scale amplitude variabilty - multiple flavors of shimmer
+sh_localdB,amplitude variability,""""
+sh_apq5,amplitude variability,""""
+sh_dda,amplitude variability,""""
+rmsdB_mean,amplitude,"signal amplitude stats - normalized variablity is likely to be more valuable than absolute values, as recrodings are uncalibrated"
+rmsdB_sd,amplitude,""""
+rmsdB_iqr,amplitude,""""
+rmsdB_iqrnorm,amplitude,""""
+melcc2_mn,clarity,energy ratio - low to high frequencies.  Stats
+melcc2_sd,clarity,""""
+spec_flat_mean,spectral structure ,spectral flatness stats - low values mean signal is more sinusoidal
+spec_flat_sd,spectral structure ,""""
+spec_flat_iqr,spectral structure ,""""
+spec_flat_iqrnorm,spectral structure ,""""
+contrst_0_100_mean,spectral structure ,DROP ME
+contrst_0_100_sd,spectral structure ,DROP ME
+contrst_0_100_iqr,spectral structure ,DROP ME
+contrst_0_100_iqrnorm,spectral structure ,DROP ME
+contrst_100_200_mean,spectral structure ,"spectral contrast stats in band (100 to 200 Hz, etc) - range of powers, how ""peaky"" the spectrum is"
+contrst_100_200_sd,spectral structure ,""""
+contrst_100_200_iqr,spectral structure ,""""
+contrst_100_200_iqrnorm,spectral structure ,""""
+contrst_200_400_mean,spectral structure ,""""
+contrst_200_400_sd,spectral structure ,""""
+contrst_200_400_iqr,spectral structure ,""""
+contrst_200_400_iqrnorm,spectral structure ,""""
+contrst_400_800_mean,spectral structure ,""""
+contrst_400_800_sd,spectral structure ,""""
+contrst_400_800_iqr,spectral structure ,""""
+contrst_400_800_iqrnorm,spectral structure ,""""
+contrst_800_1600_mean,spectral structure ,""""
+contrst_800_1600_sd,spectral structure ,""""
+contrst_800_1600_iqr,spectral structure ,""""
+contrst_800_1600_iqrnorm,spectral structure ,""""
+contrst_1600_3200_mean,spectral structure ,""""
+contrst_1600_3200_sd,spectral structure ,""""
+contrst_1600_3200_iqr,spectral structure ,""""
+contrst_1600_3200_iqrnorm,spectral structure ,""""
+contrst_3200_6400_mean,spectral structure ,""""
+contrst_3200_6400_sd,spectral structure ,""""
+contrst_3200_6400_iqr,spectral structure ,""""
+contrst_3200_6400_iqrnorm,spectral structure ,""""
+mfcc_X_mn,spectral structure ,"Mel frequency cepstral coeffiecient (MFCC), coefficient X, mean value (typically 13 bands, so mfcc_1_mn up to mfcc_13_mn)"
+mfcc_X_sd,spectral structure ,"Mel frequency cepstral coeffiecient (MFCC), coefficient X, standard deviation"
+harmonicity_mean,clarity,ratio of harmonic to non-harmonic energy; higher values correspond to clearer voice
+harmonicity_sd,clarity,
+cpp_mean,clarity,cepstral peak prominence - high if voice is very clear - stats across utterance
+cpp_sd,clarity,""""
+cpp_med,clarity,""""
+cpp_iqr,clarity,""""
+cpps_entirewv,clarity,""""
+dfa_alpha,spectral structure ,Detrended fluctiation analysis - nonlinear feature related to voice quality in some papers
+frac_voiced,timing,time spent in vowels
+frac_silent,timing,related to pause fraction
+frac_voiced_of_nonsilent,timing,fraction of nonsilent time in voiced speech (i.e. mostly vowels)
+dur,timing,should be redundant with total time? Need to verify
+total_time,timing,"length of speech, including pauses"
+phonationtime,timing,length of time spent speaking
+pause_total_time,timing,pause statistics
+pause_frac,timing,fraction of time spend pausing
+num_pauses,timing,""""
+pause_len_mean,timing,""""
+pause_len_std,timing,""""
+pause_median,timing,""""
+pause_iqr,timing,
+num_syll,timing,speaking rate statistics - number of syllables
+syl_speakingrate,timing,""""
+syl_articulationrate,timing,""""
+syl_avg_duration,timing,syllable timing
+syl_median_spacing,timing,""""
+syl_iqr_spacing,timing,""""
+numClipped,data quality,IGNORE for Classification - # clipped samples
+est_snr_dB,data quality,IGNORE for Classification - estimated SNR
+noise_dB,data quality,IGNORE for Classification - noise power estiamte
+SOURCE,,IGNORE
+seg_method,,IGNORE
+file,,IGNORE
+,,
+LINGUISTIC FEATURES - MONOLOGUE AND COOKIE ONLY,,
+adjective_rate,parts of speech analysis,see https://github.com/novoic/blabla/blob/master/FEATURES.md  - I am extracting a subset of what this package offers
+adposition_rate,parts of speech analysis,""""
+adverb_rate,parts of speech analysis,""""
+auxiliary_rate,parts of speech analysis,""""
+determiner_rate,parts of speech analysis,""""
+interjection_rate,parts of speech analysis,""""
+noun_rate,parts of speech analysis,""""
+numeral_rate,parts of speech analysis,""""
+particle_rate,parts of speech analysis,""""
+pronoun_rate,parts of speech analysis,""""
+proper_noun_rate,parts of speech analysis,""""
+punctuation_rate,parts of speech analysis,""""
+subordinating_conjunction_rate,parts of speech analysis,""""
+symbol_rate,parts of speech analysis,""""
+verb_rate,parts of speech analysis,""""
+demonstrative_rate,parts of speech analysis,""""
+conjunction_rate,parts of speech analysis,""""
+possessive_rate,parts of speech analysis,""""
+noun_verb_ratio,parts of speech analysis,""""
+noun_ratio,parts of speech analysis,""""
+pronoun_noun_ratio,parts of speech analysis,""""
+total_dependency_distance,linguistic complexity,""""
+average_dependency_distance,linguistic complexity,""""
+total_dependencies,linguistic complexity,""""
+average_dependencies,linguistic complexity,""""
+closed_class_word_rate,linguistic complexity,""""
+open_class_word_rate,linguistic complexity,""""
+content_density,linguistic complexity,""""
+idea_density,linguistic complexity,""""
+honore_statistic,linguistic complexity,""""
+brunet_index,linguistic complexity,""""
+type_token_ratio,linguistic complexity,""""
+word_length,linguistic complexity,average length of word (letter count)
+prop_inflected_verbs,linguistic complexity,see https://github.com/novoic/blabla/blob/master/FEATURES.md  - I am extracting a subset of what this package offers
+prop_auxiliary_verbs,linguistic complexity,""""
+prop_gerund_verbs,linguistic complexity,""""
+prop_participles,linguistic complexity,""""
+num_words,linguistic complexity,number of total words
+filler_rate,parts of speech analysis,see https://github.com/novoic/blabla/blob/master/FEATURES.md  - I am extracting a subset of what this package offers
